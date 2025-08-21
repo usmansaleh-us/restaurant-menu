@@ -118,3 +118,26 @@ footer {
   margin: 0 10px;
   text-decoration: none;
 }
+/* Collapsible Categories */
+.menu-category.collapsed .menu-item {
+  display: none;
+}
+.menu-category h2 {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.menu-category h2:hover {
+  color: #e67e22;
+}
+
+/* Search Box */
+.search-box {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+}
