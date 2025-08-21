@@ -4,12 +4,15 @@ body {
   padding: 0;
   background: #f9f9f9;
 }
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
+  header 
+  background: #5C4033; /* deep brown */
+  color: white;
   text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
 }
 
 .header-content {
@@ -46,20 +49,22 @@ main {
 }
 
 .menu-category {
-  background: #fff;
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
 
 .menu-category h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-  font-size: 1.6em;
-  color: #333;
+  background: #D4A017; /* golden yellow */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+  .menu-category h2:hover {
+  background: #E6B800;
+  }
 
 .menu-item {
   display: flex;
