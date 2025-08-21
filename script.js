@@ -20,3 +20,8 @@ searchInput.addEventListener("keyup", function () {
     item.style.display = text.includes(searchText) ? "flex" : "none";
   });
 });
+// Toggle category visibility
+function toggleCategory(element) {
+  const items = element.nextElementSibling;
+  items.style.display = (items.style.display === "block") ? "none" : "block";
+}
