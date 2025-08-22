@@ -1,132 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Menu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="logo.PNG" alt="Restaurant Logo" class="header-img">
-      <div class="header-text">
-        <h1>GUEST PRIDE HOTEL MENU</h1>
-        <p>RESTAURANT MENU</p>
-      </div>
-    </div>
-  </header>
+    <header>
+        <div class="header-content">
+		
+        <img src="logo.PNG" alt="Restaurant Logo" class="header-img">
+            <div class="header-text">
+                <h1>GUEST PRIDE HOTEL MENU</h1>
+                <p>RESTURANT MENU</p>
+            </div>
+        </div>
+    </header>
 
-  <nav>
-    <button onclick="showCategory('Chicken')">Chicken</button>
-    <button onclick="showCategory('Salads')">Salads</button>
-    <button onclick="showCategory('Breakfast')">Breakfast</button>
-    <button onclick="showCategory('Soups')">Soups</button>
-    <button onclick="showCategory('Rice')">Rice</button>
-    <button onclick="showCategory('Sides')">Sides/Others</button>
-    <button onclick="showCategory('Pasta')">Pasta & Noodles</button>
-  </nav>
+    <nav>
+        <button onclick="showCategory('Chicken')">Chicken</button>
+        <button onclick="showCategory('Salads')">Salads</button>
+        <button onclick="showCategory('Breakfast')">Breakfast</button>
+        <button onclick="showCategory('Soups')">Soup</button>
+		<button onclick="showCategory('Rice')">Rice</button>
+		<button onclick="showCategory('Sides/Others')">Sides/Others</button>
+		<button onclick="showCategory('Pasta/noodles')">Pasta/noodles</button>
+    </nav>
 
-  <main id="menu">
-    <!-- CHICKEN -->
-    <section id="Chicken" class="menu-category hidden">
-      <h2>CHICKEN</h2>
-      <div class="menu-item">
+    <main id="menu">
+		 <section id="Chicken" class="menu-category hidden"
+    <h2>CHICKEN</h2>
+    <div class="menu-item">
         <img src="chicken1.jpg" alt="Sweet & Sour Chicken">
         <div>
-          <h3>Sweet & Sour Chicken <span class="price">₦10,000</span></h3>
-          <p>Chicken breast tossed in sweet and savory sauce served with steamed rice or Cantonese rice.</p>
+            <h3>Sweet & Sour Chicken</h3>
+            <p>Chicken breast tossed in sweet and savory sauce served with steamed rice or Cantonese rice</p>
+            <span>₦10,000</span>
         </div>
-      </div>
-      <div class="menu-item">
+    </div>
+
+    <div class="menu-item">
         <img src="chicken2.jpg" alt="Jerk Chicken">
         <div>
-          <h3>Jerk Chicken <span class="price">₦10,000</span></h3>
-          <p>Grilled chicken legs marinated in Caribbean spices served with steamed vegetables and French fries.</p>
+            <h3>Jerk Chicken</h3>
+            <p>Grilled chicken legs marinated in Caribbean flavor and spices served with steamed vegetables and French fries</p>
+            <span>₦10,000</span>
         </div>
-      </div>
-      <!-- Add remaining chicken items here in same structure -->
-    </section>
+    </div>
 
-    <!-- SALADS -->
-    <section id="Salads" class="menu-category hidden">
-      <h2>SALADS</h2>
-      <div class="menu-item">
+    <div class="menu-item">
+        <img src="chicken3.jpg" alt="Shredded Chicken">
+        <div>
+            <h3>Shredded Chicken</h3>
+            <p>Tender and juicy chicken strips in vegetable sauce served with steamed rice or Cantonese rice</p>
+            <span>₦10,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="chicken4.jpg" alt="Butter Chicken">
+        <div>
+            <h3>Butter Chicken</h3>
+            <p>Traditional chicken chunks marinated in tomato and butter sauce served with garlic or butter naan</p>
+            <span>₦11,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="chicken5.jpg" alt="Chicken Afra">
+        <div>
+            <h3>Chicken Afra</h3>
+            <p>Grilled chicken chunks in African creamy spices served with bread rolls or steamed rice</p>
+            <span>₦9,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="chicken6.jpg" alt="Chicken Escalope">
+        <div>
+            <h3>Chicken Escalope</h3>
+            <p>Thin fried breaded boneless chicken/beef served with sweet and savory dip</p>
+            <span>₦12,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="chicken7.jpg" alt="Sesame Chicken">
+        <div>
+            <h3>Sesame Chicken</h3>
+            <p>Chicken strips tossed in sweet and savory sesame sauce served in lettuce bed</p>
+            <span>₦8,000</span>
+        </div>
+    </div>
+</section>
+		
+		<section id="Salads" class="menu-category hidden"
+	<h2>SALADS</h2>
+    <div class="menu-item">
         <img src="salad1.jpg" alt="Chicken Caesar Salad">
         <div>
-          <h3>Chicken Caesar Salad <span class="price">₦8,000</span></h3>
-          <p>Lettuce, tomatoes, cucumber, croutons, parmesan, grilled chicken, creamy dressing.</p>
+            <h3>Chicken Caesar Salad</h3>
+            <p>Lettuce, tomatoes, cucumber, bread crotons, parmesan cheese, grilled chicken breast served with creamy dressing</p>
+            <span>₦8,000</span>
         </div>
-      </div>
-      <!-- Add remaining salads here -->
-    </section>
+    </div>
 
-    <!-- BREAKFAST -->
-    <section id="Breakfast" class="menu-category hidden">
-      <h2>BREAKFAST</h2>
-      <div class="menu-item">
-        <img src="breakfast1.jpg" alt="Signature Breakfast">
+    <div class="menu-item">
+        <img src="salad2.jpg" alt="Greek Salad">
         <div>
-          <h3>Signature Breakfast <span class="price">₦8,000</span></h3>
-          <p>Pancakes, minced meat sauce, bread, turkey ham, tea/coffee or seasonal juice.</p>
+            <h3>Greek Salad</h3>
+            <p>Lettuce, tomatoes, cucumber, feta cheese, olives, grapes served with vinaigrette dressing</p>
+            <span>₦8,000</span>
         </div>
-      </div>
-      <!-- Add remaining breakfast here -->
-    </section>
+    </div>
 
-    <!-- SOUPS -->
-    <section id="Soups" class="menu-category hidden">
-      <h2>SOUPS</h2>
-      <div class="menu-item">
+    <div class="menu-item">
+        <img src="salad3.jpg" alt="Fattoush Salad">
+        <div>
+            <h3>Fattoush Salad</h3>
+            <p>Lettuce, tomatoes, cucumber, bread flakes served with vinaigrette dressing</p>
+            <span>₦7,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="salad4.jpg" alt="Green Salad">
+        <div>
+            <h3>Green Salad</h3>
+            <p>Lettuce, cucumber, tomatoes, with lemon dressing</p>
+            <span>₦7,000</span>
+        </div>
+    </div>
+</section>
+       
+      <!-- BREAKFAST CATEGORY -->
+		
+		<section id="Breakfast" class="menu-category hidden"
+    <h2>BREAKFAST</h2>
+
+    <div class="menu-item">
+        <img src="breakfast1.jpg" alt="Signanature Breakfast">
+        <div>
+            <h3>Signanature Breakfast</h3>
+            <p>Pancakes, mince meat sauce, bread (toasted/plain), turkey ham, tea/black coffee or seasonal fruit juice</p>
+            <span>₦8,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="breakfast2.jpg" alt="English Breakfast">
+        <div>
+            <h3>English Breakfast</h3>
+            <p>Toasted bread, eggs (fried/omelette/scrambled/sunnyside up), sausages, baked beans, grilled tomatoes. Tea/black coffee or seasonal fruit juice</p>
+            <span>₦8,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="breakfast3.jpg" alt="Nigerian Breakfast">
+        <div>
+            <h3>Nigerian Breakfast</h3>
+            <p>Boiled yam/fried plantain, egg sauce, peppered kidney & liver. Tea, pap or custard</p>
+            <span>₦8,000</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- SOUPS CATEGORY -->
+		<section id="Soups" class="menu-category hidden"
+    <h2>SOUPS</h2>
+    <div class="menu-item">
         <img src="soup1.jpg" alt="Creamy Mushroom Soup">
         <div>
-          <h3>Creamy Mushroom Soup <span class="price">₦7,000</span></h3>
-          <p>Creamy soup with tender mushrooms served with bread buns.</p>
+            <h3>Creamy Mushroom Soup</h3>
+            <p>Deliciously creamy with tender bites of mushrooms served with bread buns</p>
+            <span>₦7,000</span>
         </div>
-      </div>
-      <!-- Add remaining soups here -->
-    </section>
-
-    <!-- RICE -->
-    <section id="Rice" class="menu-category hidden">
-      <h2>RICE</h2>
-      <div class="menu-item">
-        <h3>Pineapple Chicken Fried Rice <span class="price">₦7,000</span></h3>
-        <p>Special rice dish with pineapple, nuts, chicken & vegetables.</p>
-      </div>
-      <!-- Add remaining rice dishes here -->
-    </section>
-
-    <!-- SIDES -->
-    <section id="Sides" class="menu-category hidden">
-      <h2>SIDES / OTHERS</h2>
-      <div class="menu-item"><h3>French Fries <span class="price">₦5,000</span></h3></div>
-      <!-- Add more sides -->
-    </section>
-
-    <!-- PASTA -->
-    <section id="Pasta" class="menu-category hidden">
-      <h2>PASTA & NOODLES</h2>
-      <div class="menu-item">
-        <h3>Alfredo Chicken Pasta <span class="price">₦10,000</span></h3>
-        <p>Creamy penne pasta with diced chicken & parmesan.</p>
-      </div>
-      <!-- Add more pasta dishes -->
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <p>Follow Us</p>
-      <div class="social-links">
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-      </div>
-      <p>&copy; 2025 Guest Pride Hotel. All Rights Reserved.</p>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="menu-item">
+        <img src="soup2.jpg" alt="Sweetcorn Chicken Soup">
+        <div>
+            <h3>Sweetcorn Chicken Soup</h3>
+            <p>Puree sweetcorn with chicken chunks in chef’s special spices and herbs served with bread buns</p>
+            <span>₦7,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="soup3.jpg" alt="Goat Meat Pepper Soup">
+        <div>
+            <h3>Goat Meat Pepper Soup</h3>
+            <p>Spicy goat meat in chef’s special spices and herbs served with bread buns</p>
+            <span>₦6,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="soup4.jpg" alt="Cow Leg/Head Pepper Soup">
+        <div>
+            <h3>Cow Leg/Head Pepper Soup</h3>
+            <p>Spicy cow leg/head chunks in chef’s special spices and herbs served with bread buns</p>
+            <span>₦6,000</span>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="soup5.jpg" alt="Fish Pepper Soup">
+        <div>
+            <h3>Fish Pepper Soup</h3>
+            <p>Catfish simmered in chef’s special spices and herbs served with bread buns</p>
+            <span>₦6,000</span>
+        </div>
+    </div>
+</section>
+		<!-- Rice Category -->
+		<section id="Rice" class="menu-category hidden"
+  <h2>Rice</h2>
+  <div class="menu-item">
+    <h3>Pineapple Chicken Fried Rice <span class="price">7,000</span></h3>
+    <p>Special rice dish with chopped pineapple, nuts, chicken and vegetables served in pineapple shell.</p>
+  </div>
+  <div class="menu-item">
+    <h3>Shrimp Fried Rice <span class="price">9,000</span></h3>
+    <p>Tasty rice with spicy shrimps mixed with seasonal vegetables.</p>
+  </div>
+  <div class="menu-item"><h3>Brown Rice <span class="price">7,000</span></h3></div>
+  <div class="menu-item"><h3>Chinese Fried Rice (Beef/Chicken) <span class="price">7,000</span></h3></div>
+  <div class="menu-item"><h3>Vegetable Jollof Rice <span class="price">4,000</span></h3></div>
+  <div class="menu-item"><h3>Chicken Jollof Rice <span class="price">7,000</span></h3></div>
+  <div class="menu-item"><h3>Beef Jollof Rice <span class="price">7,000</span></h3></div>
+</section>
+
+<!-- Side & Others -->
+		<section id="Sides/Others" class="menu-category hidden"
+  <h2>Side/Others</h2>
+  <div class="menu-item"><h3>Egg of Choice (Omelette, Fried, Scrambled, Sunny Side-up) <span class="price">3,000</span></h3></div>
+  <div class="menu-item"><h3>French Fries <span class="price">5,000</span></h3></div>
+  <div class="menu-item"><h3>Naan Bread <span class="price">4,000</span></h3></div>
+  <div class="menu-item"><h3>Fried Plantain <span class="price">5,000</span></h3></div>
+  <div class="menu-item"><h3>Kidney & Liver Sauce <span class="price">5,000</span></h3></div>
+  <div class="menu-item"><h3>White Rice <span class="price">4,000</span></h3></div>
+</section>
+
+<!-- Pasta & Noodles -->
+		<section id="Pasta/Noodles" class="menu-category hidden"
+  <h2>Pasta & Noodles</h2>
+  <div class="menu-item">
+    <h3>Alfredo Chicken Pasta <span class="price">10,000</span></h3>
+    <p>Creamy base penne pasta with diced chicken breast with grated parmesan cheese.</p>
+  </div>
+  <div class="menu-item">
+    <h3>Spaghetti Bolognese <span class="price">8,000</span></h3>
+    <p>Spaghetti pasta in tomato-based sauce with minced meat sauce and grated parmesan cheese.</p>
+  </div>
+  <div class="menu-item">
+    <h3>Arrabbiata Penne Pasta <span class="price">8,000</span></h3>
+    <p>Penne pasta in spicy tomato-based sauce and chicken chunks with grated parmesan cheese.</p>
+  </div>
+  <div class="menu-item"><h3>Special Oriental Vegetable Noodles <span class="price">4,000</span></h3></div>
+  <div class="menu-item"><h3>Special Oriental Chicken Noodles <span class="price">7,500</span></h3></div>
+  <div class="menu-item"><h3>Special Oriental Noodles & Eggs (Omelette or Boiled) <span class="price">7,000</span></h3></div>
+</section>
+ </main>
+	<footer>
+    <div class="footer-container">
+        <p>Follow Us</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2025 Guest Pride Hotel. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
