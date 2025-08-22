@@ -143,3 +143,16 @@ footer {
 .social-links a:hover {
     color: #f5f5f5;
 }
+.item {
+  width: 250px;              /* your box width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  
+  word-wrap: break-word;     /* breaks long words */
+  overflow-wrap: break-word; /* modern way */
+  white-space: normal;       /* allows wrapping */
+  text-overflow: ellipsis;   /* adds ... if clipped */
+}
+
