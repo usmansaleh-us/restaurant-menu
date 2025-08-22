@@ -1,148 +1,126 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
 }
-  header 
-  background: #5C4033; /* deep brown */
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.8em;
-  letter-spacing: 2px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-
+header {
+   background-color: #232f3e !important; /* Brown */
+color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
-
 .header-img {
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
-
 nav {
-  text-align: center;
-  padding: 15px;
-  background: #444;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px;
 }
-
 nav button {
-  margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  background: #fff;
-  color: #333;
-  font-weight: bold;
+    background: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
-
-main {
-  padding: 20px;
+nav button:hover {
+    background: #0056b3;
 }
-
 .menu-category {
-  margin: 20px auto;
-  width: 90%;
-  max-width: 800px;
-
-.menu-category h2 {
-  background: #D4A017; /* golden yellow */
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    padding: 20px;
 }
-  .menu-category h2:hover {
-  background: #E6B800;
-  }
-
 .menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
+    display: flex;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.menu-item:last-child {
-  border-bottom: none;
-}
-
 .menu-item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
-
 .menu-item div {
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .menu-item h3 {
-  margin: 0;
-  font-size: 1.1em;
-  color: #222;
-  display: flex;
-  justify-content: space-between;
+    margin: 0;
 }
-
 .menu-item p {
-  margin: 5px 0 0;
-  font-size: 0.95em;
-  color: #555;
+    margin: 5px 0;
+    color: gray;
+}
+.hidden {
+    display: none;
 }
 
-.price {
-  font-weight: bold;
-  color: #000;
-  margin-left: 20px;
+body {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-
+header, .category-buttons {
+    background-color: #ffffffcc;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ddd;
+}
+.menu-section {
+    background-color: #ffffffcc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
 footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+    background-color: #232f3e; /* Calm Amazon-like dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin: 10px 0;
 }
 
 .social-links a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-/* Collapsible Categories */
-.menu-category.collapsed .menu-item {
-  display: none;
-}
-.menu-category h2 {
-  cursor: pointer;
-  transition: color 0.3s;
-}
-.menu-category h2:hover {
-  color: #e67e22;
+    color: #ff9900; /* Amazon accent */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Search Box */
-.search-box {
-  display: block;
-  margin: 0 auto 20px;
-  padding: 10px 15px;
-  width: 80%;
-  max-width: 400px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 1em;
+.social-links a:hover {
+    color: #f5f5f5;
 }
