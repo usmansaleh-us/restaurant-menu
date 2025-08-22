@@ -42,6 +42,25 @@ nav button:hover {
 .menu-category {
     padding: 20px;
 }
+.categories {
+  display: flex;
+  overflow-x: auto;   /* enables horizontal scroll */
+  white-space: nowrap; /* prevents wrapping */
+  gap: 10px;           /* spacing between categories */
+  padding: 10px;
+  scrollbar-width: thin; /* optional for nicer scrollbars */
+}
+
+.categories button {
+  flex: 0 0 auto;      /* keeps buttons from shrinking */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #c0a16b; /* example color */
+  color: white;
+  cursor: pointer;
+}
+
 .menu-item {
     display: flex;
     background: #fff;
