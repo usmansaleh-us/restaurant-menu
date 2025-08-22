@@ -6,20 +6,12 @@ document.querySelectorAll(".menu-category h2").forEach(categoryHeader => {
   });
 });
 
-// Search Functionality
-const searchInput = document.createElement("input");
-searchInput.type = "text";
-searchInput.placeholder = "Search menu...";
-searchInput.classList.add("search-box");
-document.body.insertBefore(searchInput, document.body.firstChild);
-
-searchInput.addEventListener("keyup", function () {
-  const searchText = this.value.toLowerCase();
-  document.querySelectorAll(".menu-item").forEach(item => {
-    const text = item.innerText.toLowerCase();
-    item.style.display = text.includes(searchText) ? "flex" : "none";
-  });
-});
+function showCategory(categoryId) {
+    let categories = document.querySelectorAll('.menu-category');
+    categories.forEach(cat => {
+        cat.classList.add('hidden');
+    });
+    document.getElementById(categoryId).classList.remove('hidden');
 // Toggle category visibility
 function toggleCategory(element) {
   const items = element.nextElementSibling;
