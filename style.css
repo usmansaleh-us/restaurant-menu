@@ -155,4 +155,12 @@ footer {
   white-space: normal;       /* allows wrapping */
   text-overflow: ellipsis;   /* adds ... if clipped */
 }
+.category-items {
+  display: none; /* hidden by default */
+  margin-top: 15px;
+}
+
+.category-items.active {
+  display: block; /* show only when active */
+}
 
